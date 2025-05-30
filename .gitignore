@@ -1,0 +1,22 @@
+# Go
+*.test
+*.out
+*.log
+vendor/
+bin/
+pkg/
+go.sum
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Artifacts
+dist/
+build/
