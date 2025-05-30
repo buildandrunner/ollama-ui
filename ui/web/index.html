@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ollama UI</title>
+	<script src="https://unpkg.com/htmx.org@2.0.0"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+	<section class="p-24">
+		<h1 class="text-2xl font-medium">🦙 Ollama Models</h1>
+
+		<ul id="modelList">
+			<li>Loading models...</li>
+		</ul>
+
+		<!-- HTMX fetches on page load -->
+		<div hx-get="/api/models" hx-trigger="load" hx-target="#modelList" hx-swap="innerHTML"></div>
+
+
+	</section>
+</body>
+
+</html>
